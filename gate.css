@@ -1,0 +1,66 @@
+html, body{
+	height: 100%;
+}
+.lgate p{
+	color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-100%);
+	font-size: 15vmin;
+}
+
+.rgate p{
+	color: white;
+	text-align: center;
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	transform: translate(50%,-100%);
+	font-size: 15vmin;
+}
+
+.lgate{
+	background-color: black;
+	width: 50vw;
+	z-index: 1000;
+	height: 180%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: left-anim 1s ease-in-out 0.75s 1 normal both;
+	border-right: 2px white solid;
+}
+
+.rgate{
+	background-color: black;
+	width: 50vw;
+	height: 180%;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 2px white solid;
+	animation: right-anim 1s ease-in-out 0.75s 1 normal both;	
+}
+
+.main-content{
+	opacity: 0;
+	animation: main 1s ease-in-out 0.75s 1 normal both;
+}
+
+@keyframes left-anim{
+	from{left: 0; opacity: 1;}
+	to{left: -50%; opacity: 0;}
+}
+
+@keyframes right-anim{
+	from{right: 0; opacity: 1;}
+	to{right: -50%; opacity: 0;}
+}
+
+@keyframes main{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

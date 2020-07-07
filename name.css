@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Aclonica");
+
+.name-container{
+	/*border-bottom: 2px black solid;*/
+	position: relative;
+}
+.back{
+	background-image: url("https://raw.githubusercontent.com/HARSHIT-GUPTA-coder/190050048_WEB_DEV/master/name_back.jpg");
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	background-attachment: fixed;
+*/	opacity: 0.5;
+	filter: contrast(60%) grayscale(70%) sepia(70%) hue-rotate(0deg) blur(2px) saturate(2);
+	animation-name: changeback;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+}
+
+.name{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 10vmin;
+	text-align: center;	
+	color: white;
+	font-family: Aclonica;
+	white-space: nowrap;
+	overflow: hidden;    
+	animation: animated-text 3s steps(26) 2s 1 normal both;
+	text-shadow: 0.2vmin 0.2vmin 0.1vmin black, -0.2vmin -0.2vmin 0.2vmin black, 1vmin 1vmin 0.2vmin black;
+}
+
+@keyframes changeback{
+	0%{	filter: grayscale(70%) sepia(70%) hue-rotate(0deg) blur(2px) saturate(7);}
+	50%{filter: grayscale(70%) sepia(100%) hue-rotate(180deg) blur(2px) saturate(2);}
+	100%{filter: grayscale(70%) sepia(70%) hue-rotate(0deg) blur(2px) saturate(7);}
+	
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 80vmin;}
+}
+
+@media screen and (max-width: 600px) {
+  .back{
+  	height: 600px;
+  }
+}

@@ -53,7 +53,11 @@
 	background-color: rgba(10,10,10,0.1);
 	height: auto;
 	padding: 5px 5px 15px 5px;
+	border: 1px grey solid;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -4px 4px rgba(0, 0, 0, 0.2);
+	
 }
+
 
 @media screen and (max-width: 600px) {
 	#reach-me-icons .fa {

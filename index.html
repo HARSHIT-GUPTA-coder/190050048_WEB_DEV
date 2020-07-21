@@ -6,38 +6,112 @@
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="contacts.css">
 	<link rel="stylesheet" type="text/css" href="name.css">
 	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<link rel="stylesheet" type="text/css" href="content.css">
 	<link rel="stylesheet" type="text/css" href="gate.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" type="text/css" href="contacts.css">
 </head>
 <body style='overflow-x: hidden'>
-	<div class='main-content'>
-		<nav class='navbar'>
-			<a href="#education"> Education </a>
-			<a href="#hobbies"> Hobbies </a>
+	<div class='main-content' id='main-content'>
+		<nav class='navbar' id='navbar'>
+			<a href="#home">Home</a>
+			<a href="#about"> About me </a>
+			<a href="#project"> Projects </a>
+			<a href="#hobbies"> Interests </a>
 			<a href="#contact"> Contact Me </a>
 			<div class="fa fa-bars dropbtn"></div>
 		</nav>
 
-		<div class='name-container'>
+		<div class='name-container' id='home'>
 			<div class='back'></div>
 			<p class='name'>Harshit Gupta</p>
 		</div>
 
 		<div class='grid-container' style="display: grid;">
 			<div class='content'>
-				<div class='education' id='education'>
-					<h1>Education</h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
+				<div class='card about' id='about'>
+					<h1>About me</h1>
+					<p> 
+						My name is Harshit Gupta. I am currently a B.Tech. student in the department of Computer Science and Engineering at IIT Bombay. I am from Delhi(don't ask me why I took IIT Bombay instead of IIT Delhi. It's my choice!!).
+						<br>I am the club convener of Electronics and Robotics club at IIT Bombay for the year 2020-2021. Though we have been locked in our house and can't be together in the institute, We(ERC) will make sure to keep the techie inside you going on. Visit the <a href = 'https://www.facebook.com/erciitb'>Facebook page</a> for our latest events.
+					</p> 
 				</div>
-				<div class='hobbies' id='hobbies'>
+				<div class = 'card project' id = 'project'>
+					<h1>Projects</h1>
+					<div class='flex-container'>
+						<div class='proj-item'>
+							<img src="https://raw.githubusercontent.com/HARSHIT-GUPTA-coder/190050048_WEB_DEV/master/projects/stock.jpg" class='proj-img'>
+							<div class='proj-text'>
+								<div id='ph1'>
+									<h2 class='proj-head'>Reinforcement Learning Based Stock Trader</h2>
+									<i class='fa fa-angle-double-right' onclick="projDes(1)"></i>
+								</div>
+
+								<div id='pb1' class='proj-body'>
+									<h2 class='proj-head'>Reinforcement Learning Based Stock Trader</h2>
+									This project is done under the Institute Technical Summer project of IIT Bombay. The idea is to investigate various algorithms of Reinforcement Learning amd apply them to the domain of Stock Trading. We applied the DQN, DDQN, DDPG and DRQN algorithms to maximize the profit that we get from trading.<br><br>
+									<a href="https://github.com/geekpradd/Reinforcement-Learning-Stock-Trader" style="color: white">Github Repo</a> <br><br>
+									<i class='fa fa-angle-double-left' onclick="projHead(1)"></i>
+								</div>	
+							</div>
+						</div>
+
+						<div class='proj-item'>
+							<img src="https://raw.githubusercontent.com/HARSHIT-GUPTA-coder/190050048_WEB_DEV/master/projects/face.jpeg" class='proj-img'>
+							<div class='proj-text'>
+								<div id='ph4'>
+									<h2 class='proj-head'>Face Recognition Using PCA</h2>
+									<i class='fa fa-angle-double-right' onclick="projDes(4)"></i>
+								</div>
+
+								<div id='pb4' class='proj-body'>
+									<h2 class='proj-head'>Face Recognition Using PCA</h2>
+									This project is done under the Summer of Code of IIT Bombay. The project involved learning a very useful and powerful algorithm called Principal Component Analysis and then finally implementing it and using it for the task of face recognition.<br><br>
+									<a href="https://github.com/HARSHIT-GUPTA-coder/face-recognition-using-pca" style="color: white">Github Repo</a> <br><br>
+									<i class='fa fa-angle-double-left' onclick="projHead(4)"></i>
+								</div>	
+							</div>
+						</div>
+
+						<div class='proj-item'>
+							<img src="https://raw.githubusercontent.com/HARSHIT-GUPTA-coder/190050048_WEB_DEV/master/projects/sudoku.jpg" class='proj-img'>
+							<div class='proj-text'>
+								<div id='ph2'>
+									<h2 class='proj-head'>Visual Sudoku Solver</h2>
+									<i class='fa fa-angle-double-right' onclick="projDes(2)"></i>
+								</div>
+
+								<div id='pb2' class='proj-body'>
+									<h2 class='proj-head'>Visual Sudoku Solver</h2>
+									This is a project that will use OpenCV in Python to recognise the sudoku grid and digits which will be classified using a neural network and then a C++ utility will solve the sudoku and output the final solved state. This project is still on-going although majority of work is done.
+									<br><br>
+									<a href="https://github.com/geekpradd/Visual-Sudoku-Solver" style="color: white">Github Repo</a> <br><br>
+									<i class='fa fa-angle-double-left' onclick="projHead(2)"></i>
+								</div>	
+							</div>
+						</div>
+
+						<div class='proj-item'>
+							<img src="https://raw.githubusercontent.com/HARSHIT-GUPTA-coder/190050048_WEB_DEV/master/projects/line.png" class='proj-img'>
+							<div class='proj-text'>
+								<div id='ph3'>
+									<h2 class='proj-head'>Line-follower-on-Gazebo</h2>
+									<i class='fa fa-angle-double-right' onclick="projDes(3)"></i>
+								</div>
+
+								<div id='pb3' class='proj-body'>
+									<h2 class='proj-head'>Line-follower-on-Gazebo</h2>
+									This project aims at simulating a line follower bot using gazebo. There are two different models- the track and the bot. The bot uses a camera to get the image of path below it and then detect the path using OpenCV. A very basic feedback mechanism is implemented to control the bot.<br><br>
+									<a href="https://github.com/HARSHIT-GUPTA-coder/Line-follower" style="color: white">Github Repo</a> <br><br>
+									<i class='fa fa-angle-double-left' onclick="projHead(3)"></i>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='card hobbies' id='hobbies'>
 					<h1>Interests</h1>
 					<div class='hobby-grid'>
 						<div class='hobby-container i1'>
@@ -115,27 +189,67 @@
 					</div>
 				</div>
 			</div>
-			<div id = 'contact'>
-				<h2 style="text-align: center; ">Reach me</h2>
-				<div id="reach-me-icons">
-					<a href="mailto::mail4harshit1@gmail.com" class="fa fa-google" style="display: block;"></a>
-					<a href="#" class="fa fa-instagram" style="display: block;"></a>
-					<a href="https://www.facebook.com/people/Harshit-Gupta/100039702578496" class="fa fa-facebook" style="display: block;"></a>
-					<a href="" class="fa fa-youtube" style="display: block;"></a>
-					<a href="" class="fa material-icons" style="display: block;">call</a>
-					<a href="#" class="fa fa-twitter" style="display: block;"></a>
+			<div class = 'card contact' id='contact'>
+				<div class='wrap'>
+					<h2 style="text-align: center; ">Reach me</h2>
+					<div class='form'>
+						<form   action="https://formspree.io/mqkywzgz" method="POST">
+							<div class="row">
+								<div class="label">
+									<label for="name">Name</label>
+								</div>
+								<div class="data">
+									<input type="text" id="name" name="name" placeholder="Your name...">
+								</div>
+							</div>
+							<div class="row">
+								<div class="label">
+									<label for="email">Email</label>
+								</div>
+								<div class="data">
+									<input type="email" id="email" name="email" placeholder="Your email..." required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="label">
+									<label for="message">Message for me</label>
+								</div>
+								<div class="data">
+									<textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+					
+					<div id="reach-me-icons">
+						<a href="mailto::mail4harshit1@gmail.com" class="fa fa-google" style="display: block;"></a>
+						<a href="https://www.facebook.com/people/Harshit-Gupta/100039702578496" class="fa fa-facebook" style="display: block;"></a>
+						<a href="https://github.com/HARSHIT-GUPTA-coder" class="fa fa-github" style="display: block;"></a>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<footer>
+			Hope you liked It!!!<br><b> Harshit Gupta · 2020</b>
+		</footer>
 	</div>
 
-	<div class='gate'>
-		<div class='lgate'>
+	<div class='gate' id='gate'>
+		<div class='lgate' id='lgate'>
 			<p>&#x00ab</p>
 		</div>
 		<div class='rgate'>
 			<p>&#x00bb</p>
 		</div>
 	</div>
+
+
+	<script src="aboutme.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src='opening.js'></script>
 </body>
 </html>

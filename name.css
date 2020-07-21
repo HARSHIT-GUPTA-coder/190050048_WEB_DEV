@@ -12,8 +12,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-/*	background-attachment: fixed;
-*/	opacity: 0.5;
+	background-attachment: fixed;
+	opacity: 0.5;
 	filter: contrast(60%) grayscale(70%) sepia(70%) hue-rotate(0deg) blur(2px) saturate(2);
 	animation-name: changeback;
 	animation-direction: alternate-reverse;
@@ -32,7 +32,7 @@
 	font-family: Aclonica;
 	white-space: nowrap;
 	overflow: hidden;    
-	animation: animated-text 3s steps(26) 2s 1 normal both;
+	animation: animated-text 3s steps(26) 1 normal both;
 	text-shadow: 0.2vmin 0.2vmin 0.1vmin black, -0.2vmin -0.2vmin 0.2vmin black, 1vmin 1vmin 0.2vmin black;
 }
 

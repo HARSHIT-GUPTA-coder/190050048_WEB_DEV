@@ -25,7 +25,7 @@ html, body{
 	background-color: black;
 	width: 50vw;
 	z-index: 1000;
-	height: 180%;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -36,7 +36,7 @@ html, body{
 .rgate{
 	background-color: black;
 	width: 50vw;
-	height: 180%;
+	height: 100vh;
 	z-index: 1000;
 	position: absolute;
 	top: 0;
@@ -45,9 +45,9 @@ html, body{
 	animation: right-anim 1s ease-in-out 0.75s 1 normal both;	
 }
 
-.main-content{
-	opacity: 0;
-	animation: main 1s ease-in-out 0.75s 1 normal both;
+#main-content{
+	display: none;
+	/*animation: main 1s ease-in-out 0.75s 1 normal both;*/
 }
 
 @keyframes left-anim{

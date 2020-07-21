@@ -1,0 +1,60 @@
+.form{
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  width: 95%;
+  margin: 2.5%;
+}
+
+.form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.form .label {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.form .data {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.form input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form input[type=submit] {
+  background-color: #333;
+  color: white;
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form input[type=submit]:hover {
+  background-color: #111;
+}
+
+.form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .form .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
